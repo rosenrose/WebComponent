@@ -1,14 +1,16 @@
 import { registerAvatarComponent } from "./components/avatar.js";
 import { registerBadgeComponent } from "./components/badge.js";
+import { registerHeaderComponent } from "./components/header.js";
 
 const app = () => {
     registerAvatarComponent();
     registerBadgeComponent();
+    registerHeaderComponent();
 }
 
 document.addEventListener("DOMContentLoaded", app);
 
-document.querySelector("#badge-input").addEventListener("input", (event) => {
+document.querySelector("#badge-input")?.addEventListener("input", (event) => {
     const num = parseInt(event.target.value);
     const min = parseInt(event.target.min);
     const max = parseInt(event.target.max);

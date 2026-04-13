@@ -1,11 +1,13 @@
+@import "./reset.css";
 @import "./components/avatar.css";
 @import "./components/badge.css";
 
 body {
-    font-family: monospace;
+    font-family: system-ui, sans-serif;
 }
 
-div, p {
+x-header, main {
     margin: 1em;
-    font-family: sans-serif;
+    padding: 1em;
+    border: 1px dashed #000;
 }

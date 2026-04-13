@@ -6,13 +6,13 @@
     <script type="module" src="index.js" defer></script>
 </head>
 <body>
-    <p>Avatar and badge, when their powers combine...</p>
-    <div>
-        <x-badge content="5" id="live-badge">
+    <x-header title="Welcome">
+        <x-badge content="2">
             <x-avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d"></x-avatar>
         </x-badge>
-        &larr;
-        <input type="number" id="badge-input" value="5" min="1" max="99" title="badge value" />
-    </div>
+    </x-header>
+    <main>
+        <p>Hello, shadow DOM!</p>
+    </main>
 </body>
 </html>
