@@ -1,0 +1,26 @@
+x-badge {
+    vertical-align: middle;
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+    & > span.x-badge-label {
+        box-sizing: inherit;
+        position: absolute;
+        top: 0.2rem;
+        right: 0.2rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        transform: translate(50%, -50%);
+        color: #fff;
+        background-color: rgb(0, 111, 238);
+        border: 2px solid #333;
+        border-radius: 50%;
+        font-size: 0.8rem;
+        line-height: 1.2;
+        display: flex;
+        place-content: center;
+        user-select: none;;
+    }
+}

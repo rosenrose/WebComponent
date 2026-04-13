@@ -1,7 +1,6 @@
 x-avatar {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    place-content: center;
     width: 5rem;
     height: 5rem;
 
