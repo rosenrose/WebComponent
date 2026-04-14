@@ -6,8 +6,26 @@ body {
     font-family: system-ui, sans-serif;
 }
 
-x-header, main {
+x-header,
+main {
     margin: 1em;
     padding: 1em;
     border: 1px dashed #000;
+}
+
+santas-app {
+    display: block;
+    margin: 1rem;
+
+    h1 {
+        color: darkred;
+    }
+}
+
+santas-form {
+    display: block;
+
+    * {
+        vertical-align: middle;
+    }
 }

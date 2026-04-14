@@ -21,6 +21,6 @@ x-badge {
         line-height: 1.2;
         display: flex;
         place-content: center;
-        user-select: none;;
+        user-select: none;
     }
 }

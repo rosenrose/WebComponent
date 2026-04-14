@@ -1,12 +1,20 @@
 import { registerAvatarComponent } from "./components/avatar.js";
 import { registerBadgeComponent } from "./components/badge.js";
 import { registerHeaderComponent } from "./components/header.js";
+import { registerSantasApp } from "./components/santas-app.js";
+import { registerSantasForm } from "./components/santas-form.js";
+import { registerSantasList } from "./components/santas-list.js";
+import { registerSantasSummary } from "./components/santas-summary.js";
 
 const app = () => {
     registerAvatarComponent();
     registerBadgeComponent();
     registerHeaderComponent();
-}
+    registerSantasApp();
+    registerSantasForm();
+    registerSantasList();
+    registerSantasSummary();
+};
 
 document.addEventListener("DOMContentLoaded", app);
 
@@ -17,11 +25,9 @@ document.querySelector("#badge-input")?.addEventListener("input", (event) => {
 
     if (isNaN(num)) {
         event.target.value = "";
-    }
-    else if (num < min) {
+    } else if (num < min) {
         event.target.value = min;
-    }
-    else if (num > max) {
+    } else if (num > max) {
         event.target.value = max;
     }
 

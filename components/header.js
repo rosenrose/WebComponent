@@ -1,11 +1,11 @@
 const template = Object.assign(document.createElement("template"), {
     innerHTML: `
-        <link rel="stylesheet" href="${import.meta.resolve('./header.css')}">
+        <link rel="stylesheet" href="${import.meta.resolve("./header.css")}">
         <header>
             <h1></h1>
             <slot></slot>
         </header>
-    `
+    `,
 });
 
 class HeaderComponent extends HTMLElement {

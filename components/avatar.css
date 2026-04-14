@@ -5,7 +5,7 @@ x-avatar {
     width: 5rem;
     height: 5rem;
 
-    &[size=lg] {
+    &[size="lg"] {
         width: 8rem;
         height: 8rem;
     }
